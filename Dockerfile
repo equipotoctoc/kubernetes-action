@@ -2,7 +2,7 @@ FROM alpine:3.11
 
 ARG KUBECTL_VERSION="1.15.10"
 
-RUN python --version
+# RUN python --version
 RUN pip install -U setuptools
 
 RUN apk add py-pip curl
