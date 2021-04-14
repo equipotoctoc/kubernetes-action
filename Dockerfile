@@ -1,4 +1,5 @@
 FROM alpine:3.11
+FROM python:3.7
 
 ARG KUBECTL_VERSION="1.15.10"
 
