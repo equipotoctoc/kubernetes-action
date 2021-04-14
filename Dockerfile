@@ -21,5 +21,6 @@ RUN chmod +x /usr/bin/kubectl
 RUN curl -o /usr/bin/aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.17.7/2020-07-08/bin/linux/amd64/aws-iam-authenticator
 RUN chmod +x /usr/bin/aws-iam-authenticator
 
+RUN chmod +x /entrypoint.sh
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
