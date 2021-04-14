@@ -1,6 +1,9 @@
-FROM alpine:3.11
+FROM alpine:latest
 
 ARG KUBECTL_VERSION="1.15.10"
+
+RUN py --version
+RUN pip install -U setuptools
 
 RUN apk add py-pip curl
 RUN pip install awscli
